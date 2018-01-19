@@ -6,24 +6,17 @@
 package com.pengelolauangkaskosan.service;
 
 import com.pengelolauangkaskosan.entity.Penghuni;
-import com.pengelolaunagkaskosan.exception.PenghuniException;
+import com.pengelolauangkaskosan.error.PenghuniException;
 import java.util.List;
 
 /**
  *
- * @author Idham Rahadian
+ * @author Shorfana
  */
 public interface PenghuniDao {
-    
     public void insertPenghuni(Penghuni penghuni) throws PenghuniException;
-    
     public void updatePenghuni(Penghuni penghuni) throws PenghuniException;
-    
     public void deletePenghuni(Integer id) throws PenghuniException;
-    
     public Penghuni getPenghuni(Integer id) throws PenghuniException;
-    
-    public List<Penghuni> selectAllPenghuni() throws PenghuniException;
-    
-    
+    public List<Penghuni> selectAllPelanggan() throws PenghuniException;
 }

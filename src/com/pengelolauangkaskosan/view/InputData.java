@@ -5,15 +5,8 @@
  */
 package com.pengelolauangkaskosan.view;
 
-import com.pengelolauangkaskosan.database.PengelolauangkaskosanDatabase;
-import com.pengelolauangkaskosan.entity.Penghuni;
-import com.pengelolauangkaskosan.service.PenghuniDao;
-import com.pengelolaunagkaskosan.exception.PenghuniException;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.awt.Color;
 import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -78,7 +71,7 @@ public class InputData extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tViewBlnSkr = new javax.swing.JTable();
+        jTable1 = new javax.swing.JTable();
         viewDataBlnSblm = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -91,7 +84,6 @@ public class InputData extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         viewPenyajian = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -112,20 +104,28 @@ public class InputData extends javax.swing.JFrame {
 
         menuPanel.setBackground(new java.awt.Color(0, 150, 136));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/moneyHome3.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/moneyHome3.png"))); // NOI18N
 
         btnInputdata.setForeground(new java.awt.Color(153, 0, 153));
-        btnInputdata.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/moneyhome.png"))); // NOI18N
+        btnInputdata.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/moneyhome.png"))); // NOI18N
         btnInputdata.setText("Input Data");
+        btnInputdata.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnInputdata.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnInputdataMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnInputdataMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnInputdataMouseExited(evt);
+            }
         });
 
         btnViewdata.setForeground(new java.awt.Color(153, 0, 153));
-        btnViewdata.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/view.png"))); // NOI18N
+        btnViewdata.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/view.png"))); // NOI18N
         btnViewdata.setText("View Data");
+        btnViewdata.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnViewdata.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnViewdataMouseClicked(evt);
@@ -133,8 +133,9 @@ public class InputData extends javax.swing.JFrame {
         });
 
         btnsistem.setForeground(new java.awt.Color(153, 0, 153));
-        btnsistem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/system.png"))); // NOI18N
+        btnsistem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/system.png"))); // NOI18N
         btnsistem.setText("Sistem Pengeluaran");
+        btnsistem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnsistem.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnsistemMouseClicked(evt);
@@ -142,8 +143,9 @@ public class InputData extends javax.swing.JFrame {
         });
 
         btnpenyajian.setForeground(new java.awt.Color(153, 0, 153));
-        btnpenyajian.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/penyajian.png"))); // NOI18N
+        btnpenyajian.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/penyajian.png"))); // NOI18N
         btnpenyajian.setText("Penyajian Data");
+        btnpenyajian.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnpenyajian.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnpenyajianMouseClicked(evt);
@@ -151,8 +153,9 @@ public class InputData extends javax.swing.JFrame {
         });
 
         btnpenyajian1.setForeground(new java.awt.Color(153, 0, 153));
-        btnpenyajian1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/exitataulogout.png"))); // NOI18N
+        btnpenyajian1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/exitataulogout.png"))); // NOI18N
         btnpenyajian1.setText("Log Out");
+        btnpenyajian1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnpenyajian1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnpenyajian1MouseClicked(evt);
@@ -231,6 +234,7 @@ public class InputData extends javax.swing.JFrame {
         jLabel6.setText("NOMINAL");
 
         txtNama.setBackground(new java.awt.Color(22, 160, 133));
+        txtNama.setForeground(new java.awt.Color(153, 0, 153));
         txtNama.setBorder(null);
         txtNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -240,12 +244,18 @@ public class InputData extends javax.swing.JFrame {
 
         jNokamar.setBackground(new java.awt.Color(22, 160, 133));
         jNokamar.setForeground(new java.awt.Color(153, 0, 153));
-        jNokamar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
+        jNokamar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" }));
+        jNokamar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jNokamarActionPerformed(evt);
+            }
+        });
 
         jNolantai.setForeground(new java.awt.Color(153, 0, 153));
-        jNolantai.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5" }));
+        jNolantai.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9" }));
 
         txtNominal.setBackground(new java.awt.Color(22, 160, 133));
+        txtNominal.setForeground(new java.awt.Color(153, 0, 153));
         txtNominal.setBorder(null);
 
         jSeparator1.setBackground(new java.awt.Color(153, 0, 153));
@@ -255,10 +265,23 @@ public class InputData extends javax.swing.JFrame {
         jSeparator3.setForeground(new java.awt.Color(153, 0, 153));
 
         btnSimpan.setBackground(new java.awt.Color(0, 150, 136));
-        btnSimpan.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnSimpan.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        btnSimpan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSimpan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSimpanMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSimpanMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSimpanMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnSimpanMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                btnSimpanMouseReleased(evt);
             }
         });
 
@@ -277,10 +300,10 @@ public class InputData extends javax.swing.JFrame {
         );
         btnSimpanLayout.setVerticalGroup(
             btnSimpanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnSimpanLayout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
+            .addGroup(btnSimpanLayout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel7)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel13.setForeground(new java.awt.Color(153, 0, 153));
@@ -291,7 +314,7 @@ public class InputData extends javax.swing.JFrame {
         inputDataLayout.setHorizontalGroup(
             inputDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, inputDataLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(211, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(117, 117, 117))
             .addGroup(inputDataLayout.createSequentialGroup()
@@ -305,16 +328,16 @@ public class InputData extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addComponent(jLabel13)
                 .addGap(18, 18, 18)
-                .addGroup(inputDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtNominal)
-                    .addGroup(inputDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jNokamar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jNolantai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE)
-                    .addComponent(txtNama)
-                    .addComponent(jSeparator3)
-                    .addComponent(btnSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addGroup(inputDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(inputDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(txtNominal)
+                        .addComponent(jNolantai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE)
+                        .addComponent(txtNama)
+                        .addComponent(jSeparator3)
+                        .addComponent(btnSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jNokamar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         inputDataLayout.setVerticalGroup(
             inputDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -344,7 +367,7 @@ public class InputData extends javax.swing.JFrame {
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(btnSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(176, Short.MAX_VALUE))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
 
         mainPanel.add(inputData, "card2");
@@ -357,6 +380,7 @@ public class InputData extends javax.swing.JFrame {
 
         btnbulanSebelumnya.setBackground(new java.awt.Color(0, 204, 204));
         btnbulanSebelumnya.setForeground(new java.awt.Color(0, 204, 204));
+        btnbulanSebelumnya.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnbulanSebelumnya.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnbulanSebelumnyaMouseClicked(evt);
@@ -366,6 +390,7 @@ public class InputData extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(153, 0, 153));
         jLabel9.setText("Bulan Sebelumnya");
+        jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout btnbulanSebelumnyaLayout = new javax.swing.GroupLayout(btnbulanSebelumnya);
         btnbulanSebelumnya.setLayout(btnbulanSebelumnyaLayout);
@@ -379,13 +404,14 @@ public class InputData extends javax.swing.JFrame {
         btnbulanSebelumnyaLayout.setVerticalGroup(
             btnbulanSebelumnyaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnbulanSebelumnyaLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
-                .addGap(12, 12, 12))
+                .addGap(20, 20, 20)
+                .addComponent(jLabel9)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         btnBulanSekarang.setBackground(new java.awt.Color(0, 204, 204));
         btnBulanSekarang.setForeground(new java.awt.Color(153, 0, 153));
+        btnBulanSekarang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBulanSekarang.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBulanSekarangMouseClicked(evt);
@@ -400,17 +426,17 @@ public class InputData extends javax.swing.JFrame {
         btnBulanSekarang.setLayout(btnBulanSekarangLayout);
         btnBulanSekarangLayout.setHorizontalGroup(
             btnBulanSekarangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnBulanSekarangLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
+            .addGroup(btnBulanSekarangLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
                 .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18))
+                .addGap(19, 19, 19))
         );
         btnBulanSekarangLayout.setVerticalGroup(
             btnBulanSekarangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnBulanSekarangLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(19, 19, 19)
+                .addComponent(jLabel10)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout viewDataLayout = new javax.swing.GroupLayout(viewData);
@@ -542,7 +568,7 @@ public class InputData extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(153, 0, 153));
         jLabel14.setText("Bulan Sekarang");
 
-        tViewBlnSkr.setModel(new javax.swing.table.DefaultTableModel(
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -553,7 +579,7 @@ public class InputData extends javax.swing.JFrame {
                 "No", "Nama", "No Kamar", "No Lantai", "Nominal"
             }
         ));
-        jScrollPane1.setViewportView(tViewBlnSkr);
+        jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout viewDataBlnSkrngLayout = new javax.swing.GroupLayout(viewDataBlnSkrng);
         viewDataBlnSkrng.setLayout(viewDataBlnSkrngLayout);
@@ -689,15 +715,6 @@ public class InputData extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(153, 0, 153));
-        jButton4.setText("keluar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout setPengeluaranLayout = new javax.swing.GroupLayout(setPengeluaran);
         setPengeluaran.setLayout(setPengeluaranLayout);
         setPengeluaranLayout.setHorizontalGroup(
@@ -709,9 +726,7 @@ public class InputData extends javax.swing.JFrame {
                     .addComponent(jLabel19)
                     .addGroup(setPengeluaranLayout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addGroup(setPengeluaranLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1))
+                        .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(47, 47, 47)
@@ -731,9 +746,7 @@ public class InputData extends javax.swing.JFrame {
                     .addComponent(jButton1)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
-                .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addContainerGap(143, Short.MAX_VALUE))
+                .addContainerGap(188, Short.MAX_VALUE))
         );
 
         mainPanel.add(setPengeluaran, "card7");
@@ -933,7 +946,7 @@ public class InputData extends javax.swing.JFrame {
         mainPanel.add(viewData);
         mainPanel.repaint();
         mainPanel.revalidate();
-
+        
     }//GEN-LAST:event_btnViewdataMouseClicked
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -1023,8 +1036,6 @@ public class InputData extends javax.swing.JFrame {
                 + "logout", "Peringatan", dialogBtn);
 
         if (dialogResult == 0) {
-            // true condition
-            //remove panel
             this.setVisible(false);
             Login n = new Login();
             n.setVisible(true);
@@ -1033,40 +1044,43 @@ public class InputData extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnpenyajian1MouseClicked
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        mainPanel.removeAll();
-        mainPanel.repaint();
-        mainPanel.revalidate();
+    private void jNokamarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNokamarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jNokamarActionPerformed
 
-        mainPanel.add(sistemPenyajian);
-        mainPanel.repaint();
-        mainPanel.revalidate();
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void btnInputdataMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInputdataMouseEntered
+        // TODO add your handling code here:
+        btnInputdata.setBackground(new Color(23,171,156));
+    }//GEN-LAST:event_btnInputdataMouseEntered
+
+    private void btnInputdataMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInputdataMouseExited
+        // TODO add your handling code here:
+        btnInputdata.setBackground(new Color(0,150,136));
+    }//GEN-LAST:event_btnInputdataMouseExited
+
+    private void btnSimpanMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimpanMouseEntered
+        // TODO add your handling code here:
+        btnSimpan.setBackground(new Color(23,171,156));
+    }//GEN-LAST:event_btnSimpanMouseEntered
+
+    private void btnSimpanMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimpanMouseExited
+        // TODO add your handling code here:
+        btnSimpan.setBackground(new Color(0,150,136));
+    }//GEN-LAST:event_btnSimpanMouseExited
+
+    private void btnSimpanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimpanMousePressed
+        // TODO add your handling code here:
+        btnSimpan.setBackground(new Color(0,97,82));
+    }//GEN-LAST:event_btnSimpanMousePressed
+
+    private void btnSimpanMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimpanMouseReleased
+        // TODO add your handling code here:
+        btnSimpan.setBackground(new Color(0,150,136));
+    }//GEN-LAST:event_btnSimpanMouseReleased
 
     private void btnSimpanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSimpanMouseClicked
         // TODO add your handling code here:
-        DefaultTableModel tabelModel;
-        initComponents();
-        try {
-            PenghuniDao dao = PengelolauangkaskosanDatabase.getPenghuniDao();
-            Penghuni penghuni = new Penghuni();
-            penghuni.setNama(txtNama.getText());
-            penghuni.setNoKamar((String) jNokamar.getSelectedItem());
-            penghuni.setNoLantai((String) jNolantai.getSelectedItem());
-            penghuni.setNominal(Integer.parseInt(txtNominal.getText()));
-            dao.insertPenghuni(penghuni);
-            Object[]row={"No","Nama","No Kamar","No Lantai","Nominal"};
-            tabelModel = new DefaultTableModel();
-            tViewBlnSkr.setModel(tabelModel);
-            
-            javax.swing.JOptionPane.showMessageDialog(null, "Data Berhasil Disimpan");
-        } catch (SQLException exception) {
-            javax.swing.JOptionPane.showMessageDialog(null, "Maaf ada kesamaan data");
-        } catch (PenghuniException exception) {
-            javax.swing.JOptionPane.showMessageDialog(null, "Maaf anda belum menginput");
-        }
-
-
+        
     }//GEN-LAST:event_btnSimpanMouseClicked
 
     /**
@@ -1119,7 +1133,6 @@ public class InputData extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1156,6 +1169,7 @@ public class InputData extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable5;
@@ -1163,7 +1177,6 @@ public class InputData extends javax.swing.JFrame {
     private javax.swing.JPanel menuPanel;
     private javax.swing.JPanel setPengeluaran;
     private javax.swing.JPanel sistemPenyajian;
-    private javax.swing.JTable tViewBlnSkr;
     private javax.swing.JTextField txtNama;
     private javax.swing.JTextField txtNominal;
     private javax.swing.JPanel viewData;

@@ -9,27 +9,15 @@ import java.util.Objects;
 
 /**
  *
- * @author Idham Rahadian
+ * @author Shorfana
  */
 public class Penghuni {
-    
     private int id;
     private String nama;
-    private String noKamar;
-    private String noLantai;
+    private String nokmr;
+    private String nolnt;
     private int nominal;
 
-    public Penghuni(String nama, String noKamar, String noLantai, int nominal) {
-        this.nama = nama;
-        this.noKamar = noKamar;
-        this.noLantai = noLantai;
-        this.nominal = nominal;
-    }
-
-    public Penghuni(){
-        
-    }
-    
     public int getId() {
         return id;
     }
@@ -37,6 +25,8 @@ public class Penghuni {
     public void setId(int id) {
         this.id = id;
     }
+
+    
 
     public String getNama() {
         return nama;
@@ -46,20 +36,20 @@ public class Penghuni {
         this.nama = nama;
     }
 
-    public String getNoKamar() {
-        return noKamar;
+    public String getNokmr() {
+        return nokmr;
     }
 
-    public void setNoKamar(String noKamar) {
-        this.noKamar = noKamar;
+    public void setNokmr(String nokmr) {
+        this.nokmr = nokmr;
     }
 
-    public String getNoLantai() {
-        return noLantai;
+    public String getNolnt() {
+        return nolnt;
     }
 
-    public void setNoLantai(String noLantai) {
-        this.noLantai = noLantai;
+    public void setNolnt(String nolnt) {
+        this.nolnt = nolnt;
     }
 
     public int getNominal() {
@@ -72,12 +62,12 @@ public class Penghuni {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 73 * hash + this.id;
-        hash = 73 * hash + Objects.hashCode(this.nama);
-        hash = 73 * hash + Objects.hashCode(this.noKamar);
-        hash = 73 * hash + Objects.hashCode(this.noLantai);
-        hash = 73 * hash + this.nominal;
+        int hash = 5;
+        hash = 53 * hash + this.id;
+        hash = 53 * hash + Objects.hashCode(this.nama);
+        hash = 53 * hash + Objects.hashCode(this.nokmr);
+        hash = 53 * hash + Objects.hashCode(this.nolnt);
+        hash = 53 * hash + this.nominal;
         return hash;
     }
 
@@ -102,15 +92,15 @@ public class Penghuni {
         if (!Objects.equals(this.nama, other.nama)) {
             return false;
         }
-        if (!Objects.equals(this.noKamar, other.noKamar)) {
+        if (!Objects.equals(this.nokmr, other.nokmr)) {
             return false;
         }
-        if (!Objects.equals(this.noLantai, other.noLantai)) {
+        if (!Objects.equals(this.nolnt, other.nolnt)) {
             return false;
         }
         return true;
     }
-    
-    
+
+      
     
 }

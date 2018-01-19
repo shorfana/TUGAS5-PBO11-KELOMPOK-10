@@ -120,7 +120,7 @@
             <Component class="javax.swing.JLabel" name="jLabel7">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/pengelolauangkaskosan/icon/moneyhome.png"/>
+                  <Image iconType="3" name="/icon/moneyhome.png"/>
                 </Property>
               </Properties>
             </Component>
@@ -223,7 +223,7 @@
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/pengelolauangkaskosan/icon/komputer.png"/>
+                  <Image iconType="3" name="/icon/komputer.png"/>
                 </Property>
               </Properties>
             </Component>
@@ -233,7 +233,7 @@
                   <Color blue="99" green="0" red="99" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/pengelolauangkaskosan/icon/user.png"/>
+                  <Image iconType="3" name="/icon/user.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Username"/>
               </Properties>
@@ -264,7 +264,7 @@
                   <Color blue="99" green="0" red="99" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/pengelolauangkaskosan/icon/lock.png"/>
+                  <Image iconType="3" name="/icon/lock.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Password"/>
               </Properties>
@@ -293,7 +293,10 @@
             <Component class="javax.swing.JLabel" name="Login">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/pengelolauangkaskosan/icon/keyy.png"/>
+                  <Image iconType="3" name="/icon/keyy.png"/>
+                </Property>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
                 </Property>
               </Properties>
               <Events>
@@ -303,7 +306,10 @@
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/pengelolauangkaskosan/icon/Exitt.png"/>
+                  <Image iconType="3" name="/icon/Exitt.png"/>
+                </Property>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
                 </Property>
               </Properties>
               <Events>

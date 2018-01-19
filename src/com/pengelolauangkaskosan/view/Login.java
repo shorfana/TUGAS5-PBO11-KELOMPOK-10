@@ -56,7 +56,7 @@ public class Login extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(153, 0, 153));
         jLabel6.setText("KOST MONEY MANAGEMENT");
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/moneyhome.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/moneyhome.png"))); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(153, 0, 153));
@@ -92,10 +92,10 @@ public class Login extends javax.swing.JFrame {
 
         Panel2.setBackground(new java.awt.Color(0, 150, 136));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/komputer.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/komputer.png"))); // NOI18N
 
         jLabel2.setForeground(new java.awt.Color(153, 0, 153));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/user.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/user.png"))); // NOI18N
         jLabel2.setText("Username");
 
         txtUsername.setBackground(new java.awt.Color(0, 150, 136));
@@ -105,7 +105,7 @@ public class Login extends javax.swing.JFrame {
         jSeparator1.setBackground(new java.awt.Color(153, 0, 153));
 
         jLabel3.setForeground(new java.awt.Color(153, 0, 153));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/lock.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/lock.png"))); // NOI18N
         jLabel3.setText("Password");
 
         jSeparator2.setBackground(new java.awt.Color(153, 0, 153));
@@ -115,14 +115,16 @@ public class Login extends javax.swing.JFrame {
         txtPassword.setText("jasrdField1");
         txtPassword.setBorder(null);
 
-        Login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/keyy.png"))); // NOI18N
+        Login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/keyy.png"))); // NOI18N
+        Login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Login.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LoginMouseClicked(evt);
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pengelolauangkaskosan/icon/Exitt.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Exitt.png"))); // NOI18N
+        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
@@ -238,7 +240,7 @@ public class Login extends javax.swing.JFrame {
         if (usernama.equals(user) && passwordd.equals(pass)) {
             javax.swing.JOptionPane.showMessageDialog(null, "Login Berhasil");
             this.setVisible(false);
-            new InputData().setVisible(true);
+            new mainViewinputData().setVisible(true);
         } else {
             javax.swing.JOptionPane.showMessageDialog(null, "Maaf Username atau"
                     + " Password anda salah");
