@@ -116,6 +116,7 @@ public class Login extends javax.swing.JFrame {
         txtPassword.setBorder(null);
 
         Login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/keyy.png"))); // NOI18N
+        Login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Login.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LoginMouseClicked(evt);
@@ -123,6 +124,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Exitt.png"))); // NOI18N
+        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
@@ -238,7 +240,7 @@ public class Login extends javax.swing.JFrame {
         if (usernama.equals(user) && passwordd.equals(pass)) {
             javax.swing.JOptionPane.showMessageDialog(null, "Login Berhasil");
             this.setVisible(false);
-            new InputData().setVisible(true);
+            new mainViewinputData().setVisible(true);
         } else {
             javax.swing.JOptionPane.showMessageDialog(null, "Maaf Username atau"
                     + " Password anda salah");
