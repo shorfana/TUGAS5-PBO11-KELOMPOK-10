@@ -5,8 +5,6 @@
  */
 package com.pengelolauangkaskosan.model;
 
-import com.pengelolauangkaskosan.event.PenghuniListener;
-
 /**
  *
  * @author Shorfana
@@ -17,18 +15,6 @@ public class PenghuniModel {
     private String nokmr;
     private String nolnt;
     private int nominal;
-    
-    private PenghuniListener listener;
-
-    public PenghuniListener getListener() {
-        return listener;
-    }
-
-    public void setListener(PenghuniListener listener) {
-        this.listener = listener;
-    }
-    
-    
 
     public int getId() {
         return id;

@@ -5,20 +5,10 @@
  */
 package com.pengelolauangkaskosan.event;
 
-import com.pengelolauangkaskosan.model.PenghuniModel;
-
 /**
  *
  * @author Shorfana
  */
 public interface PenghuniListener {
-
-    public void onChange(PenghuniModel pModel);
-
-    public void onInsert(PenghuniModel pModel);
-
-    public void onDelete(PenghuniModel pModel);
-
-    public void onUpdate(PenghuniModel pModel);
-
+    
 }

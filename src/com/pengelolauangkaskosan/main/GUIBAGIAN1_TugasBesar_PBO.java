@@ -24,8 +24,13 @@ public class GUIBAGIAN1_TugasBesar_PBO {
     public static void main(String[] args) throws SQLException, PenghuniException {
         // TODO code application logic here
         PenghuniDao dao = PenghuniDatabase.getPelangganDao();
- 
+        Penghuni penghuni = new Penghuni();
+        penghuni.setNama("iqbal s");
+        penghuni.setNokmr("3");
+        penghuni.setNolnt("1");
+        penghuni.setNominal(90000);
         
+        dao.insertPenghuni(penghuni);
     }
     
 }
