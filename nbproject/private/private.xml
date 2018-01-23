@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/error/PenghuniException.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/view/Login.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/entity/Penghuni.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/event/PenghuniListener.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/model/TabelPengeluaranModel.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/model/TabelBulanSkrngModel.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/model/TabelBulanSblmModel.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/model/TabelSistemPengModel.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/view/InputData.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/service/PenghuniDao.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/view/mainViewinputData.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/main/GUIBAGIAN1_TugasBesar_PBO.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/model/PenghuniModel.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/view/InputDataView.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/impl/PenghuniDaoImpl.java</file>
+            <file>file:/E:/icon/TUGAS-BESAR-PBO11-KELOMPOK-10/src/com/pengelolauangkaskosan/database/PenghuniDatabase.java</file>
+        </group>
+    </open-files>
+</project-private>
