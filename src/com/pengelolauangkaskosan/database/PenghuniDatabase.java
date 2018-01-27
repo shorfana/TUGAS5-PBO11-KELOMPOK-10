@@ -16,23 +16,24 @@ import java.sql.SQLException;
  * @author Shorfana
  */
 public class PenghuniDatabase {
+
     private static Connection connection;
     private static PenghuniDao penghuniDao;
-    
-    public static Connection getConnection() throws SQLException{
-        if (connection==null) {
-            
+
+    public static Connection getConnection() throws SQLException {
+        if (connection == null) {
+
             MysqlDataSource dataSource = new MysqlDataSource();
             dataSource.setURL("jdbc:mysql://localhost:3306/dbpengelolakost");
             dataSource.setUser("root");
             dataSource.setPassword("");
-            
+
             connection = dataSource.getConnection();
         }
         return connection;
     }
-    
-    public static PenghuniDao getPelangganDao() throws SQLException{
+
+    public static PenghuniDao getPenghuniDao() throws SQLException {
         if (penghuniDao == null) {
             penghuniDao = new PenghuniDaoImpl(getConnection());
         }

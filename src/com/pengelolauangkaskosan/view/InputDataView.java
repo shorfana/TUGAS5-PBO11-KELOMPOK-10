@@ -607,13 +607,7 @@ public class InputDataView extends javax.swing.JPanel {
 
     private void btnViewdataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewdataMouseClicked
         // TODO add your handling code here:
-        mainPanel.removeAll();
-        mainPanel.repaint();
-        mainPanel.revalidate();
 
-        mainPanel.add(viewData);
-        mainPanel.repaint();
-        mainPanel.revalidate();
     }//GEN-LAST:event_btnViewdataMouseClicked
 
     private void btnInputdataMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInputdataMouseExited

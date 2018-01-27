@@ -240,7 +240,7 @@ public class Login extends javax.swing.JFrame {
         if (usernama.equals(user) && passwordd.equals(pass)) {
             javax.swing.JOptionPane.showMessageDialog(null, "Login Berhasil");
             this.setVisible(false);
-            new mainViewinputData().setVisible(true);
+            new FrameUtama().setVisible(true);
         } else {
             javax.swing.JOptionPane.showMessageDialog(null, "Maaf Username atau"
                     + " Password anda salah");

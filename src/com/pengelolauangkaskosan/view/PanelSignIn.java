@@ -67,10 +67,10 @@ public class PanelSignIn extends javax.swing.JPanel {
         PanelMain.setBackground(new java.awt.Color(54, 70, 93));
         PanelMain.setLayout(new java.awt.CardLayout());
 
-        PanelSignIn.setBackground(new java.awt.Color(54, 70, 93));
+        PanelSignIn.setBackground(new java.awt.Color(11, 72, 107));
         PanelSignIn.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtNama.setBackground(new java.awt.Color(54, 70, 93));
+        txtNama.setBackground(new java.awt.Color(11, 72, 107));
         txtNama.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         txtNama.setForeground(new java.awt.Color(255, 255, 255));
         txtNama.setBorder(null);
@@ -81,7 +81,7 @@ public class PanelSignIn extends javax.swing.JPanel {
         });
         PanelSignIn.add(txtNama, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 236, -1));
 
-        txtPass.setBackground(new java.awt.Color(54, 70, 93));
+        txtPass.setBackground(new java.awt.Color(11, 72, 107));
         txtPass.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         txtPass.setForeground(new java.awt.Color(255, 255, 255));
         txtPass.setText("jPasswordField1");
@@ -93,11 +93,11 @@ public class PanelSignIn extends javax.swing.JPanel {
         });
         PanelSignIn.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 236, -1));
 
-        jSeparator1.setBackground(new java.awt.Color(28, 163, 51));
+        jSeparator1.setBackground(new java.awt.Color(121, 189, 154));
         jSeparator1.setForeground(new java.awt.Color(174, 181, 203));
         PanelSignIn.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 240, -1));
 
-        jSeparator2.setBackground(new java.awt.Color(28, 163, 51));
+        jSeparator2.setBackground(new java.awt.Color(121, 189, 154));
         jSeparator2.setForeground(new java.awt.Color(174, 181, 203));
         PanelSignIn.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 240, -1));
 
@@ -107,7 +107,7 @@ public class PanelSignIn extends javax.swing.JPanel {
         PanelSignIn.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(28, 163, 51));
+        jLabel5.setForeground(new java.awt.Color(121, 189, 154));
         jLabel5.setText("Sign up");
         jLabel5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -118,7 +118,7 @@ public class PanelSignIn extends javax.swing.JPanel {
         PanelSignIn.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 265, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(28, 163, 51));
+        jLabel8.setForeground(new java.awt.Color(121, 189, 154));
         jLabel8.setText("Nama ");
         PanelSignIn.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, -1));
 
@@ -133,11 +133,11 @@ public class PanelSignIn extends javax.swing.JPanel {
         PanelSignIn.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 30, 30));
 
         jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(28, 163, 51));
+        jLabel3.setForeground(new java.awt.Color(121, 189, 154));
         jLabel3.setText("Password");
         PanelSignIn.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, -1, -1));
 
-        btnSignIn.setBackground(new java.awt.Color(28, 163, 51));
+        btnSignIn.setBackground(new java.awt.Color(59, 134, 134));
         btnSignIn.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnSignIn.setForeground(new java.awt.Color(255, 255, 255));
         btnSignIn.setText("Sign in");
@@ -176,11 +176,11 @@ public class PanelSignIn extends javax.swing.JPanel {
         });
         PanelSignUp.add(txtDaftarPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 236, -1));
 
-        jSeparator3.setBackground(new java.awt.Color(28, 163, 51));
+        jSeparator3.setBackground(new java.awt.Color(121, 189, 154));
         jSeparator3.setForeground(new java.awt.Color(174, 181, 203));
         PanelSignUp.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 240, -1));
 
-        jSeparator4.setBackground(new java.awt.Color(28, 163, 51));
+        jSeparator4.setBackground(new java.awt.Color(121, 189, 154));
         jSeparator4.setForeground(new java.awt.Color(174, 181, 203));
         PanelSignUp.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 240, -1));
 
@@ -190,7 +190,7 @@ public class PanelSignIn extends javax.swing.JPanel {
         PanelSignUp.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(28, 163, 51));
+        jLabel10.setForeground(new java.awt.Color(121, 189, 154));
         jLabel10.setText("Sign in");
         jLabel10.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -201,7 +201,7 @@ public class PanelSignIn extends javax.swing.JPanel {
         PanelSignUp.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 349, -1, 30));
 
         jLabel11.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(28, 163, 51));
+        jLabel11.setForeground(new java.awt.Color(121, 189, 154));
         jLabel11.setText("Nama ");
         PanelSignUp.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, -1, -1));
 
@@ -220,7 +220,7 @@ public class PanelSignIn extends javax.swing.JPanel {
         jLabel13.setText("Password");
         PanelSignUp.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, -1, -1));
 
-        btnSignUp.setBackground(new java.awt.Color(28, 163, 51));
+        btnSignUp.setBackground(new java.awt.Color(59, 134, 134));
         btnSignUp.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnSignUp.setForeground(new java.awt.Color(255, 255, 255));
         btnSignUp.setText("Sign Up");
@@ -247,7 +247,7 @@ public class PanelSignIn extends javax.swing.JPanel {
         });
         PanelSignUp.add(txtDaftarEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 236, -1));
 
-        jSeparator5.setBackground(new java.awt.Color(28, 163, 51));
+        jSeparator5.setBackground(new java.awt.Color(121, 189, 154));
         jSeparator5.setForeground(new java.awt.Color(174, 181, 203));
         PanelSignUp.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 240, -1));
 
